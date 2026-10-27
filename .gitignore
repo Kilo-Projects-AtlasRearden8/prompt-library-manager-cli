@@ -1,20 +1,21 @@
-# Compiled Python
-__pycache__/
-*.py[cod]
-*$py.class
 
+# Compiled Python
+# Local environment (no secrets committed)
 # Package build artifacts
+# Virtual environments
+# pytest
+*$py.class
 *.egg-info/
+*.py[cod]
+*.pyc
 .eggs/
+.env
+.env.*
+.pytest_cache/
+.venv/
+__pycache__/
 build/
 dist/
-
-# pytest
-.pytest_cache/
-
-# Virtual environments
-.venv/
+dist/*.tmp
+node_modules/
 venv/
-
-# Local environment (no secrets committed)
-.env
