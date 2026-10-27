@@ -1,0 +1,28 @@
+[project]
+name = "prompt-library-manager"
+version = "0.1.0"
+description = "CLI to save, tag, search, fill, export, and send reusable AI prompts stored as local Markdown/YAML files."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = [
+    "typer>=0.9,<1.0",
+    "PyYAML>=6.0,<7.0",
+]
+
+[project.scripts]
+prompt-lib = "prompt_lib.cli:app"
+
+[dependency-groups]
+dev = ["pytest>=8,<9"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["prompt_lib*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"

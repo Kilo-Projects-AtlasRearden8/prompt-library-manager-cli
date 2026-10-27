@@ -1,0 +1,20 @@
+# Compiled Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Package build artifacts
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# pytest
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local environment (no secrets committed)
+.env
